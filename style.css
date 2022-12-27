@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Muller Regular", 'Noto Sans Wancho', sans-serif;;
+}
+
+
+@font-face {
+    font-family: "Muller Regular";
+    font-display: swap;
+    src: url("fonts/MullerRegular.woff2") format("woff2"), 
+         url("fonts/MullerRegular.woff") format("woff");
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: "Muller Bold";
+    font-display: swap;
+    src: url("fonts/MullerBold.woff2") format("woff2"), 
+         url("fonts/MullerRegular.woff") format("woff");
+    font-style: normal;
+}
+
+.promo {
+    background: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    height: 800px;
+    padding-top: 50px;
+    position: relative;
+}
+.container {
+    width: 1150px;
+    margin: 0 auto;
+}
+.promo nav {
+    display: flex;
+    justify-content: space-between;
+}
+.promo .promo__logo {
+    display: grid;
+    grid-template-columns: 50px 150px;
+    grid-template-rows: 60px;
+    align-items: center;
+}
+.promo .promo__text {
+    color: #46b1de;
+    font-size: 21px;
+}
+
+
+.promo .promo__elem ul {
+    text-decoration: none;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 60px;
+    column-gap: 30px;
+    align-items: center;
+
+}
+.promo .promo__elem li a {
+    font-size: 17px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.promo .promo__contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.promo .promo__contacts a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 10px;
+}
+.promo .promo__img {
+    max-width: 15px;
+    height: 15px;
+}
+
+.promo .promo__main {
+    margin-top: 170px;
+    max-width: 50%;
+}
+
+.promo .promo__header {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: 'Noto Sans Wancho';
+}
+.promo .promo__subheader {
+    font-size: 45px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    color: #46b1de;
+    font-family: 'Noto Sans Wancho';
+}
+.promo .promo__descr {
+    font-size: 18px;
+    margin-top: 15px;
+}
+.promo .promo__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.promo .btn {
+    width: 170px; 
+    height: 50px;
+    border: 1px solid #000;
+    background-color: #46b1de;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.promo .btn__services {
+    color: #46b1de;
+    background-color: #fff;
+}
+
+.promo .promo__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 270px);
+    grid-template-rows: 125px;
+    column-gap: 100px;
+    margin-top: 125px;
+    justify-content: center;
+}
+
+.promo .promo__items {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    border: 1px solid black;
+    background: #fff;
+    padding: 10px;
+    z-index: 1;
+    font-size: 16px;
+}
+.promo .promo__number {
+    color: #46b1de;
+    font-size: 60px;
+    font-family: "Muller Bold";
+}
+.promo .promo__words {
+    max-width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.promo .promo__image {
+    position: absolute;
+    bottom: 45px;
+    right: 150px;
+}
+
+.reasons {
+    padding-top: 120px;
+}
+.reasons .reasons__header {
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Noto Sans Wancho';
+}
+.reasons .reasons__header span {
+    color: #46b1de;
+}
+.reasons .reasons__subheader {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;;
+    padding: 0 240px;
+}
+.reasons .reasons__wrapper {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px); 
+    gap: 10px 30px; 
+    background-color: #46b1de;
+    border-radius: 10px;
+    padding: 20px;
+}
+.reasons .reasons__item {
+    display: grid;
+    grid-template-columns: 75px 225px;
+    grid-template-rows: 50px 80px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    row-gap: 20px;
+}
+.reasons .reasons__item:nth-child(even) {
+    order: 1;
+}
+
+.reasons .reasons__descr {
+    grid-column: 1/4;
+    font-size: 18px;
+}
+.reasons .reasons__num {
+    font-size: 45px;
+    color: #46b1de;
+    justify-content: center;
+    font-family: "Muller Bold";
+}
+.reasons .reasons__text {
+    font-size: 19px;
+    text-transform: uppercase;
+    color: #46b1de;
+}
+.footer {
+    margin-top: 30px;
+    background: linear-gradient(0.25turn, #a3dcf5,#4688ec);
+    height: 300px;
+    padding: 50px 0;
+}
+.footer .footer__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 450px;
+}
+.footer .footer__head {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    grid-template-rows: 85px;
+    column-gap: 10px;
+    align-items: center;
+}
+.footer .footer__name {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.footer .footer__subname {
+    font-size: 22px;
+}
+.footer .footer__info {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: auto;
+    column-gap: 50px;
+    margin-top: 30px;
+}
+.footer .footer__menu {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color: #041938de;
+}
+.footer .footer__elem a {
+    text-decoration: none;
+    color: #041938de;
+}
+.footer .footer__elem:nth-child(2) {
+    margin-top: 15px;
+}
+#hours {
+    color: #010a18de;
+    font-weight: bold;
+}
+.footer .footer__lang {
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer .footer__ukr {
+    padding-right: 10px;
+    border-right: 1px solid #000;
+    font-weight: bold;
+}
+.footer .footer__engl {
+    padding-left: 10px;
+}
+.footer .footer__lang a{
+    text-decoration: none;
+    color: #000;
+}
+.footer .footer__head1 {
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.footer .footer__list {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.footer .footer__img { 
+    margin-right: 20px;
+}
+#whatsapp {
+    margin-right: 0;
+}
+.footer .footer__list a {
+    text-decoration: none;
+    color: #000;
+}
+.footer .footer__copyright {
+    text-align:end;
+    margin-top: 10px;
+}
